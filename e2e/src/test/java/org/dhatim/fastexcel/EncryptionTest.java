@@ -22,7 +22,7 @@ import java.security.GeneralSecurityException;
 
 public class EncryptionTest {
 
-    private static final File testFile = new File("target/encryptTest.xlsx");
+    private static final File testFile = new File("encryptTest.xlsx");
 
     private static final String secretKey = "foobaa";
 
