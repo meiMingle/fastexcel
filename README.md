@@ -331,3 +331,22 @@ This project does not implement read-write encryption
 protected excel documents, but it can be realized by combining `poi` and `poi-ooxml`.
 This test class is a reference implementation :
 [EncryptionTest](./e2e/src/test/java/org/dhatim/fastexcel/EncryptionTest.java) 
+
+### Switch maven to gradle
+
+Since the xxx version, the project management will be switched from maven to gradle.The following is the planned route
+
+- [x] Create a build scan for the Maven build,instruction:[MAVEN_BUILD_SCAN.md](./.mvn/MAVEN_BUILD_SCAN.md)
+
+- [x] Run an automatic conversion to generate gradle management related configuration
+
+- [ ] Create a build scan for the Gradle build
+
+- [ ] Verify dependencies and fix any problems
+
+- [ ] Replace Maven plugins with Gradle equivalents
+
+- [ ] Develop a mechanism to verify that the two builds produce the same artifacts
+
+  
+
