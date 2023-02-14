@@ -40,7 +40,7 @@ Note heap memory usage is measured just before flushing the workbook to the outp
 <dependency>
     <groupId>org.dhatim</groupId>
     <artifactId>fastexcel</artifactId>
-    <version>0.14.7</version>
+    <version>0.14.18</version>
 </dependency>
 ```
 
@@ -215,6 +215,18 @@ IntStream.rangeClosed(3,5).forEach(ws::hideRow);
 IntStream.rangeClosed(3,5).forEach(ws::hideColumn);
 ```
 
+Group rows or colums
+
+```java
+ws.groupRows(2，3);
+ws.groupRows(1，5);
+
+ws.groupCols(2，3);
+ws.groupCols(1，5);
+```
+
+
+
 Set header and footer content.\
 To set page enumeration in the top right:
 
@@ -301,7 +313,7 @@ In between there a more developer friendly wrapper around Apache Poi called [Exc
 <dependency>
     <groupId>org.dhatim</groupId>
     <artifactId>fastexcel-reader</artifactId>
-    <version>0.14.7</version>
+    <version>0.14.18</version>
 </dependency>
 ```
 
